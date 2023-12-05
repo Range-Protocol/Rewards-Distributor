@@ -1,0 +1,21 @@
+{
+  "name": "distributor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "hardhat": "^2.14.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "crypto": "^1.0.1",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.3.11"
+  }
+}
