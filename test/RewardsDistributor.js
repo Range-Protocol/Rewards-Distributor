@@ -73,7 +73,7 @@ describe('RewardsDistributor', () => {
 		await token2.transfer(rewardsDistributor.address, parseEther("100000"));
 		await token3.transfer(rewardsDistributor.address, parseEther("100000"));
 	});
-	
+
 	it('non owner should not add merkle root', async () => {
 		await expect(rewardsDistributor.connect(user2).setMerkleRootForToken(token.address, root))
 			.to.be.revertedWithCustomError(rewardsDistributor,"OwnableUnauthorizedAccount")

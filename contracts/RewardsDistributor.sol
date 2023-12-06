@@ -100,6 +100,9 @@ contract RewardsDistributor is IRewardsDistributor, Ownable {
         return _tokenList;
     }
 
+    /**
+     * @dev constructs and returns the leaf/node.
+     */
     function getLeaf(
         IERC20 token,
         address user,
